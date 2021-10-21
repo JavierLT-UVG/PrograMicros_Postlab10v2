@@ -1,0 +1,292 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+[v i1_strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"71 C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+[v _isr isr `II(v  1 e 1 0 ]
+"163
+[v _main main `(v  1 e 1 0 ]
+"206
+[v _config_io config_io `(v  1 e 1 0 ]
+"217
+[v _config_reloj config_reloj `(v  1 e 1 0 ]
+"226
+[v _baud_config baud_config `(v  1 e 1 0 ]
+"243
+[v _config_int config_int `(v  1 e 1 0 ]
+"253
+[v _enviar_string enviar_string `(v  1 e 1 0 ]
+[v i1_enviar_string enviar_string `(v  1 e 1 0 ]
+"263
+[v _traducir traducir `(uc  1 e 1 0 ]
+"303
+[v _sumar_vector sumar_vector `(uc  1 e 1 0 ]
+"166 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"414
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+[s S217 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"482
+[s S226 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S231 . 1 `S217 1 . 1 0 `S226 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES231  1 e 1 @11 ]
+[s S23 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"553
+[u S31 . 1 `S23 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES31  1 e 1 @12 ]
+[s S173 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"1068
+[s S182 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S186 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S189 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S192 . 1 `S173 1 . 1 0 `S182 1 . 1 0 `S186 1 . 1 0 `S189 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES192  1 e 1 @24 ]
+"1133
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1140
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1416
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S249 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1718
+[u S257 . 1 `S249 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES257  1 e 1 @140 ]
+[s S87 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1882
+[s S93 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S98 . 1 `S87 1 . 1 0 `S93 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES98  1 e 1 @143 ]
+[s S113 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2582
+[s S122 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S126 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S129 . 1 `S113 1 . 1 0 `S122 1 . 1 0 `S126 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES129  1 e 1 @152 ]
+"2642
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2704
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @154 ]
+[s S150 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"3352
+[u S159 . 1 `S150 1 . 1 0 ]
+[v _BAUDCTLbits BAUDCTLbits `VES159  1 e 1 @391 ]
+"3387
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"46 C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+[v _pInicial pInicial `[38]uc  1 e 38 0 ]
+"47
+[v _pFinal pFinal `[42]uc  1 e 42 0 ]
+"48
+[v _errorPuerto errorPuerto `[36]uc  1 e 36 0 ]
+"49
+[v _valor valor `[3]uc  1 e 3 0 ]
+"50
+[v _valor_dec valor_dec `[3]uc  1 e 3 0 ]
+"51
+[v _caso caso `uc  1 e 1 0 ]
+"52
+[v _puerto puerto `uc  1 e 1 0 ]
+"53
+[v _pos_valor pos_valor `uc  1 e 1 0 ]
+"163
+[v _main main `(v  1 e 1 0 ]
+{
+"201
+} 0
+"253
+[v _enviar_string enviar_string `(v  1 e 1 0 ]
+{
+[v enviar_string@dato dato `*.4uc  1 a 1 wreg ]
+"255
+[v enviar_string@i i `i  1 a 2 12 ]
+"253
+[v enviar_string@dato dato `*.4uc  1 a 1 wreg ]
+"255
+[v enviar_string@dato dato `*.4uc  1 a 1 14 ]
+"261
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"6
+[v strlen@cp cp `*.4DCuc  1 a 1 9 ]
+"4
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"8
+[v strlen@s s `*.4DCuc  1 a 1 8 ]
+"13
+} 0
+"217 C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+[v _config_reloj config_reloj `(v  1 e 1 0 ]
+{
+"224
+} 0
+"206
+[v _config_io config_io `(v  1 e 1 0 ]
+{
+"215
+} 0
+"243
+[v _config_int config_int `(v  1 e 1 0 ]
+{
+"250
+} 0
+"226
+[v _baud_config baud_config `(v  1 e 1 0 ]
+{
+"241
+} 0
+"71
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"158
+} 0
+"253
+[v i1_enviar_string enviar_string `(v  1 e 1 0 ]
+{
+[v i1enviar_string@dato dato `*.4uc  1 a 1 wreg ]
+"255
+[v i1enviar_string@i i `i  1 a 2 8 ]
+"253
+[v i1enviar_string@dato dato `*.4uc  1 a 1 wreg ]
+"255
+[v i1enviar_string@dato dato `*.4uc  1 a 1 7 ]
+"261
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+[v i1_strlen strlen `(ui  1 e 2 0 ]
+{
+[v i1strlen@s s `*.4DCuc  1 a 1 wreg ]
+"6
+[v i1strlen@cp cp `*.4DCuc  1 a 1 4 ]
+"4
+[v i1strlen@s s `*.4DCuc  1 a 1 wreg ]
+"8
+[v i1strlen@s s `*.4DCuc  1 a 1 3 ]
+"13
+} 0
+"263 C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+[v _traducir traducir `(uc  1 e 1 0 ]
+{
+[v traducir@num num `uc  1 a 1 wreg ]
+[v traducir@num num `uc  1 a 1 wreg ]
+[v traducir@num num `uc  1 a 1 2 ]
+"301
+} 0
+"303
+[v _sumar_vector sumar_vector `(uc  1 e 1 0 ]
+{
+[v sumar_vector@vect vect `*.4uc  1 a 1 wreg ]
+"305
+[v sumar_vector@resultado resultado `uc  1 a 1 3 ]
+"303
+[v sumar_vector@vect vect `*.4uc  1 a 1 wreg ]
+"306
+[v sumar_vector@vect vect `*.4uc  1 a 1 4 ]
+"308
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 5 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 3 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 6 ]
+"51
+} 0

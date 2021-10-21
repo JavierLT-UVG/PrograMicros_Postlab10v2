@@ -1,0 +1,571 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\Postlab10.X.production.o
+cinit CODE 0 13 13 28 2
+text1 CODE 0 242 242 34 2
+text2 CODE 0 2C7 2C7 1B 2
+text3 CODE 0 364 364 7 2
+text4 CODE 0 34E 34E D 2
+text5 CODE 0 35B 35B 9 2
+text6 CODE 0 2FB 2FB 16 2
+text7 CODE 0 3B 3B 11D 2
+text8 CODE 0 276 276 2D 2
+text9 CODE 0 2E2 2E2 19 2
+text10 CODE 0 203 203 3F 2
+text11 CODE 0 311 311 15 2
+text12 CODE 0 326 326 15 2
+maintext CODE 0 158 158 5B 2
+cstackCOMMON COMMON 1 70 70 A 1
+cstackBANK0 BANK0 1 44 44 11 1
+inittext CODE 0 33B 33B 13 2
+intentry CODE 0 4 4 C 2
+bssBANK0 BANK0 1 55 55 6 1
+idataBANK0 CODE 0 2A3 2A3 24 2
+idataBANK1 CODE 0 1B3 1B3 50 2
+dataBANK0 BANK0 1 20 20 24 1
+dataBANK1 BANK1 1 A0 A0 50 1
+bssCOMMON COMMON 1 7A 7A 3 1
+config CONFIG 4 2007 2007 2 2
+$C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 10 10 3 2
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5B-6F 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 5B-6F 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 36B-1FFF 2
+ENTRY 3-3 2
+ENTRY 36B-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 36B-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7D-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 36B-1FFF 2
+STRING 3-3 2
+STRING 36B-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Postlab10.X.production.o
+13 cinit CODE >614:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+13 cinit CODE >617:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+13 cinit CODE >693:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+14 cinit CODE >694:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+15 cinit CODE >695:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+16 cinit CODE >696:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+17 cinit CODE >697:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+18 cinit CODE >698:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+19 cinit CODE >699:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+1A cinit CODE >700:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+1B cinit CODE >701:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+1C cinit CODE >702:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+21 cinit CODE >706:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+22 cinit CODE >707:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+23 cinit CODE >708:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+24 cinit CODE >709:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+25 cinit CODE >710:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+26 cinit CODE >711:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+27 cinit CODE >712:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+28 cinit CODE >713:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+29 cinit CODE >714:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+2E cinit CODE >718:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+2F cinit CODE >719:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+30 cinit CODE >720:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+31 cinit CODE >721:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+32 cinit CODE >722:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+33 cinit CODE >723:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+34 cinit CODE >726:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+35 cinit CODE >727:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+36 cinit CODE >728:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+37 cinit CODE >734:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+37 cinit CODE >736:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+38 cinit CODE >737:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+4 intentry CODE >71:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+326 text12 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+327 text12 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+328 text12 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+32C text12 CODE >44:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+330 text12 CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+332 text12 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+334 text12 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+339 text12 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+33A text12 CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8.c
+311 text11 CODE >303:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+312 text11 CODE >306:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+324 text11 CODE >307:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+325 text11 CODE >308:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+203 text10 CODE >263:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+204 text10 CODE >265:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+205 text10 CODE >268:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+207 text10 CODE >271:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+209 text10 CODE >274:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+20B text10 CODE >277:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+20D text10 CODE >280:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+20F text10 CODE >283:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+211 text10 CODE >286:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+213 text10 CODE >289:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+215 text10 CODE >292:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+217 text10 CODE >295:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+219 text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+21E text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+223 text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+226 text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+229 text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+22C text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+22F text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+232 text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+235 text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+238 text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+23B text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+23E text10 CODE >300:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+241 text10 CODE >301:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+2E2 text9 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2E3 text9 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2E7 text9 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2E8 text9 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2EC text9 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2F4 text9 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2FA text9 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+276 text8 CODE >253:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+277 text8 CODE >255:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+27A text8 CODE >257:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+284 text8 CODE >258:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+28C text8 CODE >259:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+28E text8 CODE >259:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+29A text8 CODE >259:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+29E text8 CODE >259:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+2A2 text8 CODE >261:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+3B text7 CODE >71:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+3B text7 CODE >73:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+3D text7 CODE >74:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+42 text7 CODE >82:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+44 text7 CODE >83:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+48 text7 CODE >84:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+4C text7 CODE >86:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+50 text7 CODE >88:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+53 text7 CODE >98:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+5B text7 CODE >99:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+60 text7 CODE >100:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+6B text7 CODE >102:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+6D text7 CODE >102:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+71 text7 CODE >104:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+72 text7 CODE >106:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+7F text7 CODE >107:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+93 text7 CODE >108:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+A7 text7 CODE >110:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+B0 text7 CODE >112:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+B1 text7 CODE >114:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+B6 text7 CODE >121:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+BE text7 CODE >122:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+C3 text7 CODE >123:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+CE text7 CODE >125:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+D0 text7 CODE >125:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+D4 text7 CODE >127:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+D5 text7 CODE >129:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+E2 text7 CODE >130:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+F6 text7 CODE >131:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+10A text7 CODE >133:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+113 text7 CODE >135:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+114 text7 CODE >137:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+119 text7 CODE >144:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+11A text7 CODE >146:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+11E text7 CODE >148:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+125 text7 CODE >151:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+12A text7 CODE >151:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+12F text7 CODE >151:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+132 text7 CODE >151:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+135 text7 CODE >154:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+136 text7 CODE >155:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+137 text7 CODE >156:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+13C text7 CODE >156:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+141 text7 CODE >156:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+144 text7 CODE >156:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+147 text7 CODE >156:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+14A text7 CODE >156:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+14D text7 CODE >158:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+2FB text6 CODE >226:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+2FB text6 CODE >228:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+2FE text6 CODE >229:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+2FF text6 CODE >230:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+302 text6 CODE >231:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+305 text6 CODE >232:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+307 text6 CODE >234:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+30A text6 CODE >235:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+30B text6 CODE >236:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+30C text6 CODE >238:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+30F text6 CODE >239:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+310 text6 CODE >241:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+35B text5 CODE >243:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+35B text5 CODE >245:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+35C text5 CODE >246:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+35D text5 CODE >247:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+360 text5 CODE >248:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+363 text5 CODE >250:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+34E text4 CODE >206:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+34E text4 CODE >208:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+351 text4 CODE >209:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+352 text4 CODE >210:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+355 text4 CODE >211:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+356 text4 CODE >212:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+359 text4 CODE >213:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+35A text4 CODE >215:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+364 text3 CODE >217:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+364 text3 CODE >219:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+367 text3 CODE >220:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+368 text3 CODE >221:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+369 text3 CODE >222:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+36A text3 CODE >224:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+2C7 text2 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2CA text2 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2CE text2 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2CF text2 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2D3 text2 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2DB text2 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+2E1 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+242 text1 CODE >253:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+245 text1 CODE >255:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+248 text1 CODE >257:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+250 text1 CODE >258:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+25B text1 CODE >259:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+25F text1 CODE >259:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+26D text1 CODE >259:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+271 text1 CODE >259:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+275 text1 CODE >261:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+158 maintext CODE >163:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+158 maintext CODE >165:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+15D maintext CODE >166:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+162 maintext CODE >167:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+167 maintext CODE >168:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+16C maintext CODE >172:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+177 maintext CODE >174:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+178 maintext CODE >176:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+178 maintext CODE >177:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+17C maintext CODE >179:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+182 maintext CODE >180:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+185 maintext CODE >186:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+185 maintext CODE >187:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+189 maintext CODE >189:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+18F maintext CODE >190:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+196 maintext CODE >197:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+197 maintext CODE >198:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+198 maintext CODE >199:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+19F maintext CODE >199:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+1A4 maintext CODE >199:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+1A7 maintext CODE >199:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+1AA maintext CODE >199:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+1AD maintext CODE >199:C:\Users\fjltu\Desktop\UVG\Semestre IV\Progra de Microcontroladores\Lab10\Postlab10.X\Postlab10.c
+33B inittext CODE >667:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+33B inittext CODE >668:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+33C inittext CODE >669:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+33D inittext CODE >670:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+33E inittext CODE >671:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+33F inittext CODE >678:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+33F inittext CODE >679:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+344 inittext CODE >680:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+345 inittext CODE >681:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+346 inittext CODE >682:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+347 inittext CODE >683:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+348 inittext CODE >684:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+349 inittext CODE >685:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+34A inittext CODE >686:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+34B inittext CODE >687:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+34C inittext CODE >688:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+34D inittext CODE >689:C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__Hspace_0 36B 0 ABS 0 - -
+__Hspace_1 F0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+_caso 7C 0 COMMON 1 bssCOMMON dist/default/production\Postlab10.X.production.o
+_main 2B0 0 CODE 0 maintext dist/default/production\Postlab10.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+start 20 0 CODE 0 init C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+i1strlen@cp 74 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+sumar_vector@vect 74 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+__size_of_config_int 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__Hpowerup 0 0 CODE 0 powerup -
+_baud_config 5F6 0 CODE 0 text6 dist/default/production\Postlab10.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+___bmul@multiplicand 73 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_config_io 6B6 0 CODE 0 text4 dist/default/production\Postlab10.X.production.o
+__size_of_config_io 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+i1enviar_string@i 78 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+__end_of___bmul 676 0 CODE 0 text12 dist/default/production\Postlab10.X.production.o
+_config_io 69C 0 CODE 0 text4 dist/default/production\Postlab10.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+i1strlen@s 73 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+___bmul@multiplier 76 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+?_strlen 49 0 BANK0 1 cstackBANK0 dist/default/production\Postlab10.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+___stacklo 0 0 ABS 0 - C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+_errorPuerto 20 0 BANK0 1 dataBANK0 dist/default/production\Postlab10.X.production.o
+_BAUDCTLbits 187 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__size_of_traducir 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+start_initialization 26 0 CODE 0 cinit dist/default/production\Postlab10.X.production.o
+__end_ofi1_enviar_string 546 0 CODE 0 text8 dist/default/production\Postlab10.X.production.o
+_SPBRGH 9A 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__pcstackBANK0 44 0 BANK0 1 cstackBANK0 dist/default/production\Postlab10.X.production.o
+i1enviar_string@dato 77 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 76 0 CODE 0 cinit -
+__end_of_strlen 5C4 0 CODE 0 text2 dist/default/production\Postlab10.X.production.o
+__Hstack 0 0 STACK 2 stack -
+_traducir 406 0 CODE 0 text10 dist/default/production\Postlab10.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+_valor_dec 58 0 BANK0 1 bssBANK0 dist/default/production\Postlab10.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 26 0 CODE 0 cinit -
+__end_of_traducir 484 0 CODE 0 text10 dist/default/production\Postlab10.X.production.o
+__Lstack 0 0 STACK 2 stack -
+i1_enviar_string 4EC 0 CODE 0 text8 dist/default/production\Postlab10.X.production.o
+__Linittext 0 0 ABS 0 inittext -
+_INTCONbits B 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 20 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 20 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__size_ofi1_strlen 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+___bmul 64C 0 CODE 0 text12 dist/default/production\Postlab10.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 36B 0 ABS 0 - -
+__S1 F0 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 76 0 CODE 0 text7 dist/default/production\Postlab10.X.production.o
+_enviar_string 484 0 CODE 0 text1 dist/default/production\Postlab10.X.production.o
+enviar_string@dato 52 0 BANK0 1 cstackBANK0 dist/default/production\Postlab10.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_pInicial CA 0 BANK1 1 dataBANK1 dist/default/production\Postlab10.X.production.o
+__end_of_baud_config 622 0 CODE 0 text6 dist/default/production\Postlab10.X.production.o
+__end_of_isr 2B0 0 CODE 0 text7 dist/default/production\Postlab10.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+_config_reloj 6C8 0 CODE 0 text3 dist/default/production\Postlab10.X.production.o
+_sumar_vector 622 0 CODE 0 text11 dist/default/production\Postlab10.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\fjltu\AppData\Local\Temp\xcAs6nc.o
+strlen@s 4C 0 BANK0 1 cstackBANK0 dist/default/production\Postlab10.X.production.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\Postlab10.X.production.o
+__pdataBANK1 A0 0 BANK1 1 dataBANK1 dist/default/production\Postlab10.X.production.o
+__size_of___bmul 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_pos_valor 7A 0 COMMON 1 bssCOMMON dist/default/production\Postlab10.X.production.o
+i1_strlen 5C4 0 CODE 0 text9 dist/default/production\Postlab10.X.production.o
+_RCSTAbits 18 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__ptext10 406 0 CODE 0 text10 dist/default/production\Postlab10.X.production.o
+__ptext11 622 0 CODE 0 text11 dist/default/production\Postlab10.X.production.o
+__ptext12 64C 0 CODE 0 text12 dist/default/production\Postlab10.X.production.o
+strlen@cp 4D 0 BANK0 1 cstackBANK0 dist/default/production\Postlab10.X.production.o
+__end_ofi1_strlen 5F6 0 CODE 0 text9 dist/default/production\Postlab10.X.production.o
+__pmaintext 2B0 0 CODE 0 maintext dist/default/production\Postlab10.X.production.o
+_pFinal A0 0 BANK1 1 dataBANK1 dist/default/production\Postlab10.X.production.o
+sumar_vector@resultado 73 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_puerto 7B 0 COMMON 1 bssCOMMON dist/default/production\Postlab10.X.production.o
+__Hinittext 0 0 ABS 0 inittext -
+__size_ofi1_enviar_string 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__size_of_config_reloj 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__size_of_sumar_vector 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_config_int 6B6 0 CODE 0 text5 dist/default/production\Postlab10.X.production.o
+_strlen 58E 0 CODE 0 text2 dist/default/production\Postlab10.X.production.o
+traducir@num 72 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__size_of_enviar_string 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__pbssCOMMON 7A 0 COMMON 1 bssCOMMON dist/default/production\Postlab10.X.production.o
+init_fetch0 676 0 CODE 0 inittext dist/default/production\Postlab10.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits C 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__end_of_config_reloj 6D6 0 CODE 0 text3 dist/default/production\Postlab10.X.production.o
+__end_of_sumar_vector 64C 0 CODE 0 text11 dist/default/production\Postlab10.X.production.o
+__Lend_init 20 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 6E 0 CODE 0 cinit dist/default/production\Postlab10.X.production.o
+__Hintentry 20 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__size_of_strlen 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__ptext1 484 0 CODE 0 text1 dist/default/production\Postlab10.X.production.o
+__ptext2 58E 0 CODE 0 text2 dist/default/production\Postlab10.X.production.o
+__ptext3 6C8 0 CODE 0 text3 dist/default/production\Postlab10.X.production.o
+__ptext4 69C 0 CODE 0 text4 dist/default/production\Postlab10.X.production.o
+__ptext5 6B6 0 CODE 0 text5 dist/default/production\Postlab10.X.production.o
+__ptext6 5F6 0 CODE 0 text6 dist/default/production\Postlab10.X.production.o
+__ptext7 76 0 CODE 0 text7 dist/default/production\Postlab10.X.production.o
+__ptext8 4EC 0 CODE 0 text8 dist/default/production\Postlab10.X.production.o
+__ptext9 5C4 0 CODE 0 text9 dist/default/production\Postlab10.X.production.o
+enviar_string@i 50 0 BANK0 1 cstackBANK0 dist/default/production\Postlab10.X.production.o
+__end_of_enviar_string 4EC 0 CODE 0 text1 dist/default/production\Postlab10.X.production.o
+__end_of_config_int 6C8 0 CODE 0 text5 dist/default/production\Postlab10.X.production.o
+__size_of_baud_config 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization 6E 0 CODE 0 cinit dist/default/production\Postlab10.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+?i1_strlen 70 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+__pidataBANK0 546 0 CODE 0 idataBANK0 dist/default/production\Postlab10.X.production.o
+__pidataBANK1 366 0 CODE 0 idataBANK1 dist/default/production\Postlab10.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+_TXSTAbits 98 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__Hend_init 26 0 CODE 0 end_init -
+init_ram0 67E 0 CODE 0 inittext dist/default/production\Postlab10.X.production.o
+__end_of_main 366 0 CODE 0 maintext dist/default/production\Postlab10.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_PORTE 9 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_RCREG 1A 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\Postlab10.X.production.o
+_valor 55 0 BANK0 1 bssBANK0 dist/default/production\Postlab10.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\Postlab10.X.production.o
+__size_of_isr 0 0 ABS 0 - dist/default/production\Postlab10.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__initialization 26 0 CODE 0 cinit dist/default/production\Postlab10.X.production.o
+___bmul@product 75 0 COMMON 1 cstackCOMMON dist/default/production\Postlab10.X.production.o
+__pbssBANK0 55 0 BANK0 1 bssBANK0 dist/default/production\Postlab10.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 D 1
+intentry 0 4 8 367 2
+reset_vec 0 0 0 3 2
+dataBANK0 1 20 20 3B 1
+dataBANK1 1 A0 A0 50 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
